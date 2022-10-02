@@ -2,12 +2,12 @@
 
 string[] arrayString = { "AAAA", "SSS", "DD", "FFFFF", "X" };
 string[] finalArray = new string[arrayString.Length];
-
+int count = 0;
 for (int i = 0; i < arrayString.Length; i++)
 {
     if (arrayString[i].Length <= 3)
     {
-        finalArray[i] = arrayString[i];
+        finalArray[count] = arrayString[i];
+        count++;
     }
 }
-
